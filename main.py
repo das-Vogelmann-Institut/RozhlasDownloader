@@ -32,6 +32,7 @@ def to_latin(title):
 
 def edit_metadata(title, number):
     audiofile = eyed3.load(f"{title}.mp3")
+    title = to_latin(title)
     audiofile.tag.artist = title
     audiofile.tag.album = "Stolen GOODS"
     audiofile.tag.album_artist = "Rozhlas.cz"
