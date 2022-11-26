@@ -57,7 +57,7 @@ def save_file(title):
     
 
 def Main(source: str):
-    typer.echo(to_latin("Jak vzniká oscilátor a jak se používá sekvencer? Ondřej Bambas se vydává do dílny hudebníka a vynálezce nástrojů Václava Pelouška"))
+    #typer.echo(to_latin("Jak vzniká oscilátor a jak se používá sekvencer? Ondřej Bambas se vydává do dílny hudebníka a vynálezce nástrojů Václava Pelouška"))
     typer.secho(f"Downloading from Rozhlas | {source}",fg=typer.colors.MAGENTA, bold=True, bg = typer.colors.WHITE)
     bs = soup(get(source))
     data = bs.find_all("div", class_="mujRozhlasPlayer")[0].get("data-player")
