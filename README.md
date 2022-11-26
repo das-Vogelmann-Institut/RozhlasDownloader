@@ -3,7 +3,7 @@ Smol typer tool to download Rozhlas audio (vltava.rozhlas works, other were not 
 
 ## Installation
 
-This smol tool uses poetry to manaage dependencies. So, to get everything ready run:
+This smol tool uses poetry to manage dependencies. So, to get everything ready run:
 
 > poetry install
 
